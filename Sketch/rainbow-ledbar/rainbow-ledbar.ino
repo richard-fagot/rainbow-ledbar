@@ -17,10 +17,10 @@ void setColor(int color);
 void ledMode();
 
 #ifdef ATTINY85
-const byte R_PIN = PB4; // Broche de la led rouge
+const byte R_PIN = PB3; // Broche de la led rouge
 const byte G_PIN = PB1; // Broche de la led verte
 const byte B_PIN = PB0; // Broche de la led bleue
-const byte POTAR_PIN = PB3; // Broche du convertisseur A/N de potentiomètre
+const byte POTAR_PIN = 2;//PB4; // Broche du convertisseur A/N de potentiomètre
 const byte BUTTON_PIN = PCINT2; //Broche interupt du bouton de sélection de mode
 #else
 const byte R_PIN = 3; // Broche de la led rouge
